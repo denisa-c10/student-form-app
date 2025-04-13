@@ -18,16 +18,65 @@ Proiectul este împărțit în două părți:
 
 ### Pasul 1: Clonarea repository-ului
 
-Clonarea repository-ului pentru backend și frontend:
+Clonarea repository-ului pentru backend:
 
 ```bash
 git clone https://github.com/user/student-form-api.git
 cd student-form-api
-
+```
+```bash
 dotnet restore
 dotnet ef database update
 dotnet run
+```
+Frontend:
+Acest proiect conține doar folderul src/ dintr-o aplicație Angular, fără fișierele de configurare (cum ar fi angular.json, package.json, tsconfig.json, etc.).
 
+Pasul 1: Creează un proiect Angular nou
+Asigură-te că ai instalat Angular CLI:
+
+```bash
+Copy
+Edit
+npm install -g @angular/cli
+```
+Apoi creează un nou proiect:
+
+```bash
+Copy
+Edit
+ng new frontend
+````
+Intră în folderul creat:
+
+````bash
+Copy
+Edit
+cd frontend
+````
+Șterge folderul src/ generat automat:
+
+````bash
+Copy
+Edit
+rm -rf src/
+````
+Înlocuiește-l cu folderul src/ din acest proiect (cel furnizat de tine).
+
+Pasul 2: Instalează dependențele
+Asigură-te că în package.json sunt definite corect toate pachetele. Apoi rulează:
+
+````bash
+Copy
+Edit
+npm install
+````
+Pasul 3: Rulează aplicația
+````bash
+Copy
+Edit
+ng serve
+````
 ## Pasul 2: Instalarea Frontend (Angular)
 
 1. Deschide proiectul frontend în Visual Studio Code.
@@ -35,7 +84,8 @@ dotnet run
 
    ```bash
    npm install
-ng serve
+   ng serve
+   ````
 Detalii despre endpoint-uri:
 1. Endpoint-ul pentru crearea formularului și generarea PDF-ului
 Metodă: POST
