@@ -28,7 +28,7 @@ dotnet restore
 dotnet ef database update
 dotnet run
 
-## Pasul 4: Instalarea Frontend (Angular)
+## Pasul 2: Instalarea Frontend (Angular)
 
 1. Deschide proiectul frontend în Visual Studio Code.
 2. Instalează dependențele necesare cu comanda:
